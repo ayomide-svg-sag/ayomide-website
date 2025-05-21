@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me - Consultant Dynamics 365 Business Central</title>
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      --container-bg: rgba(25, 25, 25, 0.9);
+      --text-color: #eee;
+      --accent-color: #00bfff;
+      --content-color: #ddd;
+      --heading-color: #ccc;
+    }
+
+    .light-mode {
+      --bg-gradient: linear-gradient(135deg, #e0f7fa, #ffffff);
+      --container-bg: #ffffffdd;
+      --text-color: #111;
+      --accent-color: #0078d4;
+      --content-color: #333;
+      --heading-color: #555;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-gradient);
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: var(--text-color);
+      transition: background 0.4s, color 0.4s;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      background: var(--container-bg);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+      transition: background 0.4s;
+    }
+
+    .profile {
+      text-align: center;
+    }
+
+    .profile img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid var(--accent-color);
+    }
+
+    h1 {
+      color: var(--accent-color);
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: var(--heading-color);
+      font-weight: normal;
+      font-size: 20px;
+    }
+
+    .content {
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--content-color);
+      margin-top: 30px;
+    }
+
+    .content strong {
+      color: var(--text-color);
+    }
+
+    .skills {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--accent-color);
+    }
+
+    .skills h3 {
+      color: var(--accent-color);
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .skills ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: var(--content-color);
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 15px;
+      color: var(--heading-color);
+    }
+
+    .social a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    .social a:hover {
+      text-decoration: underline;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background: var(--accent-color);
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleMode()">Toggle Light/Dark Mode</button>
+
+  <div class="container">
+    <div class="profile">
+      <img src="image/20230910_125007.jpg" alt="OGUNTUNDE AYOMIDE MICHAEL">
+      <h1>Hi, I'm Ayomide</h1>
+      <h3>Helping You Understand Dynamics 365 Business Central</h3>
+    </div>
+
+    <div class="content">
+      <p>
+        I’m passionate about empowering businesses through technology, and one of the most powerful tools I work with is <strong>Dynamics 365 Business Central</strong>.
+      </p>
+      <p>
+        Whether you're managing <strong>fixed assets, sales orders, purchase orders, banking, or general ledger transactions</strong>, Business Central offers an integrated, user-friendly solution that simplifies operations and boosts productivity.
+      </p>
+      <p>
+        At <strong>AYTECH</strong>, we use Business Central to handle everything from Nigerian Naira-based transactions to asset management and detailed financial reporting. My goal is to make Business Central simple and effective for your business.
+      </p>
+      <p>
+        Let's make finance and operations smarter, together.
+      </p>
+    </div>
+
+    <div class="skills">
+      <h3>My Core Skills</h3>
+      <ul>
+        <li>Financial Reporting</li>
+        <li>Fixed Assets Setup</li>
+        <li>Sales Order</li>
+        <li>General Journals</li>
+        <li>Fixed Assets</li>
+        <li>Bank Reconciliation</li>
+      </ul>
+      <p><a href="Ayomide-CV.pdf" download style="color: var(--accent-color); font-weight: bold;">📄 Download My CV</a></p>
+    </div>
+
+    <div class="footer">
+      <div class="social">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="mailto:oguntundeayomide630@gmail.com">Email Me</a>
+      </div>
+      <p>© 2025 Ayomide - Dynamics 365 Business Central Advocate</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
+</body>
+</html>
